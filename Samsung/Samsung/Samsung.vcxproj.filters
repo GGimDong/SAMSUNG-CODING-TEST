@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일\Castle_defence">
+      <UniqueIdentifier>{48415db9-2676-4ce2-9901-09499dbefff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Pipe">
+      <UniqueIdentifier>{46ce2994-7239-40e3-9575-fd2560754f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Array_rotate_4">
+      <UniqueIdentifier>{3715dbcf-4889-45e0-bc08-338a8396ab1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Gary">
+      <UniqueIdentifier>{1ec0b424-0635-4cdf-976d-bee68a7a3305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성 A형 기출 문제">
+      <UniqueIdentifier>{0d43ae4a-e17e-40b8-9106-650a152ccab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성 SW 역량 테스트 기출 문제">
+      <UniqueIdentifier>{0493a51f-d777-45b0-92ad-acb28c638f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성 모의 SW 역량 테스트">
+      <UniqueIdentifier>{3ff2b5cf-821f-4831-a6c6-49e1aa5c1291}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input\Castle_defence\input1.txt">
+      <Filter>리소스 파일\Castle_defence</Filter>
+    </Text>
+    <Text Include="input\Castle_defence\input2.txt">
+      <Filter>리소스 파일\Castle_defence</Filter>
+    </Text>
+    <Text Include="input\Castle_defence\input3.txt">
+      <Filter>리소스 파일\Castle_defence</Filter>
+    </Text>
+    <Text Include="input\Castle_defence\input4.txt">
+      <Filter>리소스 파일\Castle_defence</Filter>
+    </Text>
+    <Text Include="input\Castle_defence\input5.txt">
+      <Filter>리소스 파일\Castle_defence</Filter>
+    </Text>
+    <Text Include="input\Castle_defence\input6.txt">
+      <Filter>리소스 파일\Castle_defence</Filter>
+    </Text>
+    <Text Include="input\Pipe\input1.txt">
+      <Filter>리소스 파일\Pipe</Filter>
+    </Text>
+    <Text Include="input\Pipe\input2.txt">
+      <Filter>리소스 파일\Pipe</Filter>
+    </Text>
+    <Text Include="input\Pipe\input3.txt">
+      <Filter>리소스 파일\Pipe</Filter>
+    </Text>
+    <Text Include="input\Pipe\input4.txt">
+      <Filter>리소스 파일\Pipe</Filter>
+    </Text>
+    <Text Include="input\Array_rotate_4\input.txt">
+      <Filter>리소스 파일\Array_rotate_4</Filter>
+    </Text>
+    <Text Include="input\Gary\input1.txt">
+      <Filter>리소스 파일\Gary</Filter>
+    </Text>
+    <Text Include="input\Gary\input2.txt">
+      <Filter>리소스 파일\Gary</Filter>
+    </Text>
+    <Text Include="input\Gary\input3.txt">
+      <Filter>리소스 파일\Gary</Filter>
+    </Text>
+    <Text Include="input\Gary\input4.txt">
+      <Filter>리소스 파일\Gary</Filter>
+    </Text>
+    <Text Include="input\input.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="14502_연구소.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="16637_괄호_추가하기.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="17070_파이프_옮기기_1.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="17135_캐슬_디펜스.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="17136_색종이_붙이기.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="17472_다리_만들기_2.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="17406_배열_ 돌리기_ 4.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="3954_Brainfuck_인터프리터.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="17281_⚾.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="1767_프로세서_연결하기.cpp">
+      <Filter>소스 파일\삼성 모의 SW 역량 테스트</Filter>
+    </ClCompile>
+    <ClCompile Include="14503_로봇_청소기.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="14888_연산자_끼워넣기.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="14890_경사로.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="17471_게리맨더링.cpp">
+      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="14891_톱니바퀴.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="13460_구슬_탈출_2.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="input\pic.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="input\유니온파인드.PNG">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
