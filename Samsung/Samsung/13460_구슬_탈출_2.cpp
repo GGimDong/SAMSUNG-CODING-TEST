@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
+#define MAX_N 10+1
 
 using namespace std;
 
@@ -14,6 +15,7 @@ struct pos {
 pos init_R, init_B, hole;
 int N, M;
 int min_result = -1;
+int order[MAX_N];
 
 /*	Board의 구성요소
 	0: 빈 곳
@@ -23,12 +25,6 @@ int min_result = -1;
 	4: Blue
 */
 int board[10][10];
-
-// pos의 값들을 저장하기
-pos R[10][4];
-pos B[10][4];
-
-/*지워*/void print_board() { for (int i = 0; i < N; i++) { for (int j = 0; j < M; j++) if (board[i][j] == 1)cout << "#"; else if (board[i][j] == 0) cout << " " ; else if (board[i][j] == 2) cout << "O"; else cout << board[i][j]; cout << endl; } }
 
 /* 기존의 R, B를 지우고 새로운 R, B를 보드에 넣음 */
 void set_R_B(pos R, pos B) {
@@ -65,7 +61,6 @@ void set_last_R_B() {
 	>> n은 타임에 대한 idx로 9가 max
 */
 void move(int op) {
-	cout << "Op: " << op << endl;
 	int temp_i, temp_j;
 	if (op == 1 || op == 2) {
 		for (int i = 0; i < N; i++)
@@ -74,7 +69,6 @@ void move(int op) {
 					temp_i = i;
 					temp_j = j;
 					if (op == 1) {
-						/*지워*/cout << "Up" << endl;
 						while (board[temp_i - 1][temp_j] == 2 || board[temp_i - 1][temp_j] == 0) {
 							if (board[temp_i - 1][temp_j] == 0) {
 								board[temp_i - 1][temp_j] = board[temp_i][temp_j];
@@ -85,11 +79,9 @@ void move(int op) {
 								break;
 							}
 							temp_i--;
-							//temp_j--;
 						}
 					}
 					else {
-						/*지워*/cout << "Left" << endl;
 						while (board[temp_i][temp_j - 1] == 2 || board[temp_i][temp_j - 1] == 0) {
 							if (board[temp_i][temp_j - 1] == 0) {
 								board[temp_i][temp_j - 1] = board[temp_i][temp_j];
@@ -99,7 +91,6 @@ void move(int op) {
 								board[temp_i][temp_j] = 0;
 								break;
 							}
-							//temp_i--;
 							temp_j--;
 						}
 					}
@@ -112,7 +103,6 @@ void move(int op) {
 					temp_i = i;
 					temp_j = j;
 					if (op == 3) {
-						/*지워*/cout << "Down" << endl;
 						while (board[temp_i + 1][temp_j] == 2 || board[temp_i + 1][temp_j] == 0) {
 							if (board[temp_i + 1][temp_j] == 0) {
 								board[temp_i + 1][temp_j] = board[temp_i][temp_j];
@@ -123,11 +113,9 @@ void move(int op) {
 								break;
 							}
 							temp_i++;
-							//temp_j--;
 						}
 					}
 					else {
-						/*지워*/cout << "Right" << endl;
 						while (board[temp_i][temp_j + 1] == 2 || board[temp_i][temp_j + 1] == 0) {
 							if (board[temp_i][temp_j + 1] == 0) {
 								board[temp_i][temp_j + 1] = board[temp_i][temp_j];
@@ -137,34 +125,73 @@ void move(int op) {
 								board[temp_i][temp_j] = 0;
 								break;
 							}
-							//temp_i--;
 							temp_j++;
 						}
 					}
 				}
 	}
 
-	/*지워*/ print_board(); system("pause");
-
 	return;
 }
 
 
-void BFS(pos R, pos B, int n) {
-	if(n == 10)
-		return;
+int count_up() {
+	for (int i = 0; i < MAX_N; i++) {
+		if (order[i] < 4) {
+			order[i]++;
 
-	move(3);
-	set_last_R_B();
+			for (int j = 0; j < MAX_N; j++) {
+				if (order[j] == 0) 
+					return j;
+			}
+		}
+		else if (order[i] == 4) {
+			order[i] = 1;
+		}
+	}
+	return -1;
+}
 
-	move(1);
-	set_last_R_B();
+void print_order() {
+	for (int i = 0; i < 10; i++) {
+		if (order[i] == 0) break;
+		cout << order[i];
+	}
+	cout << endl;
+	return;
+}
 
-	move(2);
-	set_last_R_B();
+int check_R_B() {
+	int is_R = -1;
+	int is_B = -1;
 
-	move(4);
-	set_last_R_B();
+	for (int i = 0; i < N; i++)
+		for (int j = 0; j < M; j++) {
+			if (board[i][j] == 3)
+				is_R = 1;
+			else if (board[i][j] == 4)
+				is_B = 1;
+		}
+
+	if (is_R == -1 && is_B == 1) return 1;
+	else return -1;
+}
+
+// n이 현재 작업하는 q의 길이가 될 것임.
+void BFS(pos R, pos B) {
+	int n;
+	
+	do{
+		n = count_up();
+		set_last_R_B();
+		for (int i = 0; i < n; i++) {
+			move(order[i]);
+		}
+		if (check_R_B() == 1) {
+			min_result = n;
+			return;
+		}
+	} while (n != -1);
 
 }
 
@@ -199,10 +226,7 @@ int main() {
 			}
 		}
 	
-	/*지워*/cout << "INIT: " << endl; print_board();
-	
-
-	BFS(init_R, init_B, 0);
+	BFS(init_R, init_B);
 
 	cout << min_result;
 	return 0;
