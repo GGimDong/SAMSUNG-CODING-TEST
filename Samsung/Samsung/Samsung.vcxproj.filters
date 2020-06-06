@@ -146,6 +146,9 @@
     <ClCompile Include="14499_주사위_굴리기.cpp">
       <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
