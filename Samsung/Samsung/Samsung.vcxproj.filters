@@ -149,6 +149,9 @@
     <ClCompile Include="소스.cpp">
       <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
+    <ClCompile Include="5658_보물상자_비밀번호.cpp">
+      <Filter>소스 파일\삼성 모의 SW 역량 테스트</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
