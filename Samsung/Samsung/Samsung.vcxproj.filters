@@ -170,6 +170,9 @@
     <ClCompile Include="1436_영화감독_숌.cpp">
       <Filter>소스 파일\Brute force</Filter>
     </ClCompile>
+    <ClCompile Include="1065_한수.cpp">
+      <Filter>소스 파일\Brute force</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
