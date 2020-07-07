@@ -34,6 +34,9 @@
     <Filter Include="소스 파일\삼성 모의 SW 역량 테스트">
       <UniqueIdentifier>{3ff2b5cf-821f-4831-a6c6-49e1aa5c1291}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Brute force">
+      <UniqueIdentifier>{202e0547-193a-4136-a7c8-0115718532db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input\Castle_defence\input1.txt">
@@ -146,11 +149,26 @@
     <ClCompile Include="14499_주사위_굴리기.cpp">
       <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
     <ClCompile Include="5658_보물상자_비밀번호.cpp">
       <Filter>소스 파일\삼성 모의 SW 역량 테스트</Filter>
+    </ClCompile>
+    <ClCompile Include="연습용.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2798_블랙잭.cpp">
+      <Filter>소스 파일\Brute force</Filter>
+    </ClCompile>
+    <ClCompile Include="2231_분해합.cpp">
+      <Filter>소스 파일\Brute force</Filter>
+    </ClCompile>
+    <ClCompile Include="7568_덩치.cpp">
+      <Filter>소스 파일\Brute force</Filter>
+    </ClCompile>
+    <ClCompile Include="1018_체스판 다시 칠하기.cpp">
+      <Filter>소스 파일\Brute force</Filter>
+    </ClCompile>
+    <ClCompile Include="1436_영화감독_숌.cpp">
+      <Filter>소스 파일\Brute force</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
