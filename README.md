@@ -1,15 +1,24 @@
 # SAMSUNG-CODING-TEST
-	2020 삼성전자 상반기 SW역량 테스트 준비
+	2020 삼성전자 하반기 SW역량 테스트 준비
 
 ### 백준 문제집  
 ---
-* **Brute force**
+* **[Brute force](https://www.acmicpc.net/step/22)**
   * 1018	체스판 다시 칠하기
   * 1065	한수
   * 1436	영화감독 숍
   *	2231	분해합
   * 2798	블랙잭
   *	7568	덩치
+
+* **[Backtracking](https://www.acmicpc.net/step/34)**
+  * 15649	N과 M (1)
+  * 15650	N과 M (2)
+  * 15651	N과 M (3)
+  *	15652	N과 M (4)
+  * 9663	N-Queen
+  *	2580	스도쿠
+ 
 
 * **[삼성 A형 기출 문제](https://www.acmicpc.net/workbook/view/2771)**
   * 16637	괄호 추가하기

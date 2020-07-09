@@ -34,7 +34,13 @@
     <Filter Include="소스 파일\삼성 모의 SW 역량 테스트">
       <UniqueIdentifier>{3ff2b5cf-821f-4831-a6c6-49e1aa5c1291}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Brute force">
+    <Filter Include="소스 파일\백준 단계별 풀이">
+      <UniqueIdentifier>{bc73dbac-19e0-47d8-8df2-9127fa4f2b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\백준 단계별 풀이\Backtracking">
+      <UniqueIdentifier>{54c35a4d-69a9-4a61-bfd0-0f22c7b19155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\백준 단계별 풀이\Brute force">
       <UniqueIdentifier>{202e0547-193a-4136-a7c8-0115718532db}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -156,22 +162,43 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="2798_블랙잭.cpp">
-      <Filter>소스 파일\Brute force</Filter>
+      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
     </ClCompile>
     <ClCompile Include="2231_분해합.cpp">
-      <Filter>소스 파일\Brute force</Filter>
+      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
     </ClCompile>
     <ClCompile Include="7568_덩치.cpp">
-      <Filter>소스 파일\Brute force</Filter>
+      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
     </ClCompile>
     <ClCompile Include="1018_체스판 다시 칠하기.cpp">
-      <Filter>소스 파일\Brute force</Filter>
+      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
     </ClCompile>
     <ClCompile Include="1436_영화감독_숌.cpp">
-      <Filter>소스 파일\Brute force</Filter>
+      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
     </ClCompile>
     <ClCompile Include="1065_한수.cpp">
-      <Filter>소스 파일\Brute force</Filter>
+      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
+    </ClCompile>
+    <ClCompile Include="15649_N과_M_(1).cpp">
+      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="15650_N과_M_(2).cpp">
+      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="15651_N과_M_(3).cpp">
+      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="15652_N과_M_(4).cpp">
+      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="9663_N-Queen.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="2580_스도쿠.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="14889_스타트와_링크.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
