@@ -43,6 +43,9 @@
     <Filter Include="소스 파일\백준 단계별 풀이\Brute force">
       <UniqueIdentifier>{202e0547-193a-4136-a7c8-0115718532db}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\백준 단계별 풀이\DFS &amp; BFS">
+      <UniqueIdentifier>{b444489f-0e11-4cd1-81ff-db27e025aa01}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input\Castle_defence\input1.txt">
@@ -199,6 +202,24 @@
     </ClCompile>
     <ClCompile Include="14889_스타트와_링크.cpp">
       <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="1260_DFS와_BFS.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2606_바이러스.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2667_단지번호붙이기.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1012_유기농_배추.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2178_미로_탐색.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="7576_토마토.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
