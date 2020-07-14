@@ -221,6 +221,15 @@
     <ClCompile Include="7576_토마토.cpp">
       <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
     </ClCompile>
+    <ClCompile Include="7569_토마토.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1697_숨바꼭질.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2206_벽_부수고_이동하기.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
