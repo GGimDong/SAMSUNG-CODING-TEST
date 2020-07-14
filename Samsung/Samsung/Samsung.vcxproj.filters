@@ -230,6 +230,21 @@
     <ClCompile Include="2206_벽_부수고_이동하기.cpp">
       <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
     </ClCompile>
+    <ClCompile Include="2644_촌수계산.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="5014_스타트링크.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2468_안전_영역.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2573_빙산.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="9205_맥주_마시면서_걸어가기.cpp">
+      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">

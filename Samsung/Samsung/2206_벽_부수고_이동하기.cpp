@@ -1,7 +1,13 @@
+/*
+	문제가 많이 어려웠다. 
+	queue에 x,y뿐 아니라, break의 여부에 따라 따로 array를 선언해 주는 개념이 생소함.
+	기존의 State까지 고려해야하는 문제가 나올 경우, 아예 3차원 배열로 확장하는 것을 생각해보자.
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <cstdlib>
 
 using namespace std;
 
@@ -25,7 +31,7 @@ int ans = -1;
 
 // 0 이 안 부순 것. 1은 이미 부순 것.
 int time_board[MAX][MAX][2] = {0,};
-bool visited[MAX][MAX] = { false, };
+bool visited[MAX][MAX][2] = { false, };
 
 void bfs() {
 	queue<point> q;
@@ -35,7 +41,7 @@ void bfs() {
 	s.x = 0;
 	s.y = 0;
 
-	visited[0][0] = true;
+	visited[0][0][0] = true;
 	time_board[0][0][0] = 1;
 	q.push(s);
 	
@@ -54,17 +60,17 @@ void bfs() {
 
 		for (int i = 0; i < 4; i++) {
 			int dx = dir[i][0], dy = dir[i][1];
-			if (x + dx >= 0 && y + dy >= 0 && x + dx < M && y + dy < N && !visited[x + dx][y + dy]) {
-				if (board[x + dx][y + dy] == 1 && !next.is_break) {
+			if (x + dx >= 0 && y + dy >= 0 && x + dx < M && y + dy < N) {
+				if (board[x + dx][y + dy] == 1 && !next.is_break && time_board[x + dx][y + dy][1]==0 ) {
 					point temp;
 					temp.x = x + dx;
 					temp.y = y + dy;
 					temp.is_break = true;
 					q.push(temp);
+
 					time_board[temp.x][temp.y][1] = time + 1;
-					visited[temp.x][temp.y] = true;
 				}
-				else if (board[x + dx][y + dy] == 0) {
+				else if (board[x + dx][y + dy] == 0 && time_board[x + dx][y + dy][was_breaked] == 0) {
 					point temp;
 					temp.x = x + dx;
 					temp.y = y + dy;
@@ -72,7 +78,6 @@ void bfs() {
 					
 					q.push(temp);
 					time_board[temp.x][temp.y][was_breaked] = time + 1;
-					visited[temp.x][temp.y] = true;
 				}
 			}
 		}
@@ -91,7 +96,7 @@ int main() {
 
 	bfs();
 	cout << ans;
-	
+	/*
 	cout << endl << endl;
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < N; j++)
@@ -104,5 +109,6 @@ int main() {
 			cout << time_board[i][j][1];
 		cout << endl;
 	}
+	*/
 	return 0;
 }
