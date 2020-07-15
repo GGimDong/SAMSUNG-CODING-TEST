@@ -245,6 +245,12 @@
     <ClCompile Include="9205_맥주_마시면서_걸어가기.cpp">
       <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
     </ClCompile>
+    <ClCompile Include="2309_일곱_난쟁이.cpp">
+      <Filter>소스 파일\백준 단계별 풀이</Filter>
+    </ClCompile>
+    <ClCompile Include="14501_퇴사.cpp">
+      <Filter>소스 파일\백준 단계별 풀이</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
