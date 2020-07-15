@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
-
+#include <queue>
+#include <cstdlib>
 #define MAX 102
 
 using namespace std;
@@ -10,36 +11,44 @@ struct point {
 	int y;
 };
 
-// 집과 목적지
-
+// 목적지 idx
 int p_idx;
 int T, N, x, y;
-vector<int> graph[MAX];
+unsigned int graph[MAX][MAX];
 
 int ans = -1;
 bool visited[MAX] = { false, };
 
-void bfs(int current) {
-	if (current == p_idx) {
-		ans = 1;
-		return;
-	}
-	else {
+bool bfs() {
+	queue<int> q;
+
+	q.push(0);
+	visited[0] = true;
+
+	while (!q.empty()) {
+		int next = q.front();
+		q.pop();
+		
+		if (visited[p_idx]) 
+			return true;
+		
 		for (int i = 0; i <= p_idx; i++) {
-			if (ans!=1 && current != i && graph[current][i] <= 1000 && !visited[i]) {
+			int edge = graph[next][i];
+			if (!visited[i] && edge <=1000) {
 				visited[i] = true;
-				bfs(i);
-				visited[i] = false;
+				q.push(i);
 			}
 		}
 	}
 
+	return false;
 }
 
 void clear() {
-	for (int i = 0; i <= p_idx; i++)
+	for (int i = 0; i <= p_idx; i++) {
 		visited[i] = false;
-	ans = -1;
+	}
+	ans = -1;	
 }
 
 int main() {
@@ -64,22 +73,21 @@ int main() {
 		
 		// graph 만들기
 		for (int j = 0; j <= p_idx; j++) {
-			for (int k = j+1; k <= p_idx; k++) {
+			for (int k = 0; k <= p_idx; k++) {
 				int len = abs(p[j].x-p[k].x) + abs(p[j].y - p[k].y);
 				graph[j][k] = len;
 				graph[k][j] = len;
 			}
 		}
 		
-		visited[0] = true;
-		bfs(0);
 		
-		if (ans == -1)
-			cout << "sad" << endl;
-		else
+		if (bfs())
 			cout << "happy" << endl;
+		else
+			cout << "sad" << endl;
 
-		clear();
+		if(i!=T-1)
+			clear();
 	}
 
 	return 0;

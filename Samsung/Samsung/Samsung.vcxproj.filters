@@ -251,6 +251,21 @@
     <ClCompile Include="14501_퇴사.cpp">
       <Filter>소스 파일\백준 단계별 풀이</Filter>
     </ClCompile>
+    <ClCompile Include="10828_스택.cpp">
+      <Filter>소스 파일\백준 단계별 풀이</Filter>
+    </ClCompile>
+    <ClCompile Include="10773_제로.cpp">
+      <Filter>소스 파일\백준 단계별 풀이</Filter>
+    </ClCompile>
+    <ClCompile Include="9012_괄호.cpp">
+      <Filter>소스 파일\백준 단계별 풀이</Filter>
+    </ClCompile>
+    <ClCompile Include="4949_균형잡힌_세상.cpp">
+      <Filter>소스 파일\백준 단계별 풀이</Filter>
+    </ClCompile>
+    <ClCompile Include="1874_스택_수열.cpp">
+      <Filter>소스 파일\백준 단계별 풀이</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
