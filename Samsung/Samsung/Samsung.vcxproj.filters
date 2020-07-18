@@ -266,6 +266,15 @@
     <ClCompile Include="1874_스택_수열.cpp">
       <Filter>소스 파일\백준 단계별 풀이</Filter>
     </ClCompile>
+    <ClCompile Include="19237_어른_상어.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="16236_아기_상어.cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="12100_2048_(Easy).cpp">
+      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
