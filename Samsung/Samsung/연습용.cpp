@@ -33,31 +33,6 @@ int main() {
 		cost[b].push_back(c);
 	}
 
-	for (int i = 0; i < n; i++) Table[i] = INF;
-	Table[s] = 0;
-	
-	for (int i = 0; i < n; i++) {
-		int minValue = INF, minIndex = -1;
 
-		for (int j = 0; j < n; j++) {
-			if (!check[j] && minValue > Table[j]) {
-				minValue = Table[j];
-				minIndex = j;
-			}
-		}
-
-		check[minIndex] = true;
-
-		for (int j = 0; j < graph[minIndex].size(); j++) {
-			int Node2 = graph[minIndex][j];
-			int Cost2 = cost[minIndex][j];
-
-			if (Table[Node2] > Table[minIndex] + Cost2) {
-				Table[Node2] = Table[minIndex] + Cost2;
-			}
-		}
-	}
-
-	cout << Table[e];
 	return 0;
 }
