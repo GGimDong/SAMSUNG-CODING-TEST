@@ -1,87 +1,63 @@
-#include <cstdio>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 
-struct SHARK {
-	int x, y, d, prio[4][4];
-};
+using namespace std;
+
+const int MAX = 100;
+const int INF = 99999999;
+
+vector<int> graph[MAX];
+vector<int> cost[MAX];
+
+int n, m, s, e;
+int Table[MAX];
+int check[MAX];
 
 int main() {
-	int N, M, K, map[20][20], time[20][20], smell[20][20];
-	SHARK shark[401];
-	int dx[4] = { -1,1,0,0 };
-	int dy[4] = { 0,0,-1,1 };
+	cin >> n >> m >> s >> e;
 
-	scanf("%d%d%d", &N, &M, &K);
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			scanf("%d", &map[i][j]);
-			if (map[i][j]) {
-				shark[map[i][j]].x = i;
-				shark[map[i][j]].y = j;
-				smell[i][j] = map[i][j];
-				time[i][j] = K;
+	/*
+		graph[1]: 2 6 8 9
+		cost[1]	: 1 1 3 9
+		1번과 연결된 node들은 2 6 8 9 이고 해당 값들의 가중치는 1 1 3 9 이다.
+	*/
+	for (int i = 0; i < m; i++) {
+		int a, b, c;
+		cin >> a >> b >> c;
+
+		graph[a].push_back(b);
+		graph[b].push_back(a);
+
+		cost[a].push_back(c);
+		cost[b].push_back(c);
+	}
+
+	for (int i = 0; i < n; i++) Table[i] = INF;
+	Table[s] = 0;
+	
+	for (int i = 0; i < n; i++) {
+		int minValue = INF, minIndex = -1;
+
+		for (int j = 0; j < n; j++) {
+			if (!check[j] && minValue > Table[j]) {
+				minValue = Table[j];
+				minIndex = j;
+			}
+		}
+
+		check[minIndex] = true;
+
+		for (int j = 0; j < graph[minIndex].size(); j++) {
+			int Node2 = graph[minIndex][j];
+			int Cost2 = cost[minIndex][j];
+
+			if (Table[Node2] > Table[minIndex] + Cost2) {
+				Table[Node2] = Table[minIndex] + Cost2;
 			}
 		}
 	}
 
-	for (int i = 1; i <= M; i++)
-		scanf("%d", &shark[i].d), shark[i].d--;
-
-	for (int i = 1; i <= M; i++)
-		for (int j = 0; j < 4; j++)
-			for (int k = 0; k < 4; k++)
-				scanf("%d", &shark[i].prio[j][k]), shark[i].prio[j][k]--;
-
-	int now = 0, sharknum = M;
-	while (now < 1000) {
-		now++;
-		for (int i = 0; i < N; i++)
-			for (int j = 0; j < N; j++)
-				map[i][j] = 0;
-
-		for (int i = 1; i <= M; i++) {
-			if (shark[i].x == -1) continue;
-			bool flag = false;
-			for (int j = 0; j < 4; j++) {
-				int nd = shark[i].prio[shark[i].d][j];
-				int nx = shark[i].x + dx[nd];
-				int ny = shark[i].y + dy[nd];
-				if (nx < 0 || ny < 0 || nx == N || ny == N || time[nx][ny] >= now) continue;
-				flag = true;
-				if (map[nx][ny]) {
-					shark[i].x = -1;
-					sharknum--;
-					break;
-				}
-				shark[i].x = nx;
-				shark[i].y = ny;
-				shark[i].d = nd;
-				map[nx][ny] = i;
-				smell[nx][ny] = i;
-				break;
-			}
-			if (flag) continue;
-			for (int j = 0; j < 4; j++) {
-				int nd = shark[i].prio[shark[i].d][j];
-				int nx = shark[i].x + dx[nd];
-				int ny = shark[i].y + dy[nd];
-				if (nx < 0 || ny < 0 || nx == N || ny == N || smell[nx][ny] != i) continue;
-				shark[i].x = nx;
-				shark[i].y = ny;
-				shark[i].d = nd;
-				break;
-			}
-		}
-		for (int i = 1; i <= M; i++) {
-			if (shark[i].x == -1) continue;
-			time[shark[i].x][shark[i].y] = now + K;
-		}
-
-		if (sharknum == 1) {
-			printf("%d", now);
-			return 0;
-		}
-	}
-
-	printf("-1");
+	cout << Table[e];
 	return 0;
 }

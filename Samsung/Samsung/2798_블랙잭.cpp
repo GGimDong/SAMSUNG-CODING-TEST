@@ -44,7 +44,6 @@ void doRecursion(int current) {
 				number_select[i] = 0;
 			}
 		}
-
 	}
 }
 

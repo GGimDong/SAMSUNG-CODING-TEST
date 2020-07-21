@@ -25,15 +25,6 @@
     <Filter Include="리소스 파일\Gary">
       <UniqueIdentifier>{1ec0b424-0635-4cdf-976d-bee68a7a3305}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\삼성 A형 기출 문제">
-      <UniqueIdentifier>{0d43ae4a-e17e-40b8-9106-650a152ccab8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\삼성 SW 역량 테스트 기출 문제">
-      <UniqueIdentifier>{0493a51f-d777-45b0-92ad-acb28c638f90}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\삼성 모의 SW 역량 테스트">
-      <UniqueIdentifier>{3ff2b5cf-821f-4831-a6c6-49e1aa5c1291}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\백준 단계별 풀이">
       <UniqueIdentifier>{bc73dbac-19e0-47d8-8df2-9127fa4f2b88}</UniqueIdentifier>
     </Filter>
@@ -45,6 +36,18 @@
     </Filter>
     <Filter Include="소스 파일\백준 단계별 풀이\DFS &amp; BFS">
       <UniqueIdentifier>{b444489f-0e11-4cd1-81ff-db27e025aa01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성 문제 풀이">
+      <UniqueIdentifier>{8d6ae95e-7140-4638-9617-766afb8efa2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성 문제 풀이\삼성 A형 기출 문제">
+      <UniqueIdentifier>{0d43ae4a-e17e-40b8-9106-650a152ccab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제">
+      <UniqueIdentifier>{0493a51f-d777-45b0-92ad-acb28c638f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성 문제 풀이\삼성 모의 SW 역량 테스트">
+      <UniqueIdentifier>{3ff2b5cf-821f-4831-a6c6-49e1aa5c1291}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -99,67 +102,67 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="14502_연구소.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="16637_괄호_추가하기.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17070_파이프_옮기기_1.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17135_캐슬_디펜스.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17136_색종이_붙이기.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17472_다리_만들기_2.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17406_배열_ 돌리기_ 4.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="3954_Brainfuck_인터프리터.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17281_⚾.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="1767_프로세서_연결하기.cpp">
-      <Filter>소스 파일\삼성 모의 SW 역량 테스트</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 모의 SW 역량 테스트</Filter>
     </ClCompile>
     <ClCompile Include="14503_로봇_청소기.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="14888_연산자_끼워넣기.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="14890_경사로.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17471_게리맨더링.cpp">
-      <Filter>소스 파일\삼성 A형 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="14891_톱니바퀴.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="13460_구슬_탈출_2.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="15685_드래곤_커브.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17144_미세먼지_안녕!.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="17779_게리맨더링_2.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="14499_주사위_굴리기.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="5658_보물상자_비밀번호.cpp">
-      <Filter>소스 파일\삼성 모의 SW 역량 테스트</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 모의 SW 역량 테스트</Filter>
     </ClCompile>
     <ClCompile Include="연습용.cpp">
       <Filter>소스 파일</Filter>
@@ -267,13 +270,16 @@
       <Filter>소스 파일\백준 단계별 풀이</Filter>
     </ClCompile>
     <ClCompile Include="19237_어른_상어.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="16236_아기_상어.cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
     <ClCompile Include="12100_2048_(Easy).cpp">
-      <Filter>소스 파일\삼성 SW 역량 테스트 기출 문제</Filter>
+      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
+    </ClCompile>
+    <ClCompile Include="19236_청소년 상어.cpp">
+      <Filter>소스 파일\삼성 문제 풀이</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
