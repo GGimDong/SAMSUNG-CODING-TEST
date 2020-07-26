@@ -284,6 +284,12 @@
     <ClCompile Include="19238_스타트_택시.cpp">
       <Filter>소스 파일\삼성 문제 풀이</Filter>
     </ClCompile>
+    <ClCompile Include="삼성_모의_1_1.cpp">
+      <Filter>소스 파일\삼성 문제 풀이</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_1_2.cpp">
+      <Filter>소스 파일\삼성 문제 풀이</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
