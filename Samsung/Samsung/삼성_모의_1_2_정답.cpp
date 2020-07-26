@@ -5,8 +5,8 @@ const int MAX = 15;
 int n, m, k, t;
 int myMap[MAX][MAX];
 
-int dirY[4] = {-1,0,1,0};
-int dirX[4] = {0,1,0,-1};
+int dirY[4] = { -1,0,1,0 };
+int dirX[4] = { 0,1,0,-1 };
 
 int dir[6][4] = {	// valve의종류가 1~5이니까
 //	상우하좌
@@ -25,7 +25,7 @@ void opening(int y, int x, int rotate) {
 	int valIndex = myMap[y][x];
 	int myDir[4] = { 0, };
 	int myValue = 0;
-	
+
 	for (int i = 0; i < 4; i++) myDir[i] = dir[valIndex][i];	// 먼저 그 밸프의 방향을
 
 	for (int i = 0; i < rotate; i++) {	// 이제 그 밸브를 돌려야지
@@ -44,7 +44,7 @@ void opening(int y, int x, int rotate) {
 				curX = curX + dirX[i];
 
 				if (!(curY >= 0 && curY < n && curX >= 0 && curX < m)) break;
-				
+
 				if (myMap[curY][curX] == 0) {
 					myMap[curY][curX] = 8;
 					openingValue++;
@@ -60,13 +60,23 @@ void opening(int y, int x, int rotate) {
 void getResult(int idx) {
 	if (idx >= valCnt) {
 		int myValIdx = 0;
+		int temp[MAX][MAX];
+
 		openingValue = 0;
+
+		for (int i = 0; i < n; i++)
+			for (int j = 0; j < m; j++)
+				temp[i][j] = myMap[i][j];
 
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
-				opening(i, j, rotates[myValIdx++]);
+				if (myMap[i][j] >= 1 && myMap[i][j] <= 5) opening(i, j, rotates[myValIdx++]);
 			}
 		}
+
+		for (int i = 0; i < n; i++)
+			for (int j = 0; j < m; j++)
+				myMap[i][j] = temp[i][j];
 
 		if (openingValue > result) result = openingValue;
 
@@ -85,18 +95,23 @@ int main() {
 
 	for (int testcase = 0; testcase < t; testcase++) {
 		scanf("%d %d", &n, &m);
-		
+
+		result = 0;
 		valCnt = 0;
+
+		int zeroCnt = 0;
 
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
 				scanf("%d", &myMap[i][j]);
 				if (myMap[i][j] >= 1 && myMap[i][j] <= 5) valCnt++;
+				if (myMap[i][j] == 0) zeroCnt++;
+
 			}
 		}
 
 		getResult(0);
-		printf("#%d %d\n", testcase + 1, result);
+		printf("#%d %d\n", testcase + 1, zeroCnt - result);
 	}
 
 	return 0;
