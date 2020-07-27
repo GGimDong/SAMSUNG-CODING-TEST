@@ -296,6 +296,9 @@
     <ClCompile Include="삼성_모의_1_2_정답.cpp">
       <Filter>소스 파일\삼성 문제 풀이</Filter>
     </ClCompile>
+    <ClCompile Include="17825_주사위_윷놀이.cpp">
+      <Filter>소스 파일\삼성 문제 풀이</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
