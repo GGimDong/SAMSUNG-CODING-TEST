@@ -320,6 +320,9 @@
     <ClCompile Include="14499_주사위_굴리기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3190_뱀.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
