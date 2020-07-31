@@ -311,6 +311,9 @@
     <ClCompile Include="삼성_모의_3_2.cpp">
       <Filter>소스 파일\삼성 문제 풀이</Filter>
     </ClCompile>
+    <ClCompile Include="19235_모노미노도미노.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
