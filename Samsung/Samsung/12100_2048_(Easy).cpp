@@ -1,65 +1,67 @@
-/*
-	2048에서 이전의 움직임과 동일한 움직임
-*/
 #include <iostream>
-
+#include <cstring>
 using namespace std;
-const int MAX = 20;
-int N;
-int origin[MAX][MAX];
-int board[MAX][MAX];
-int order[5];
-int ans = -1;
 
-int dx[4] = { 0,0,0,0 };
-int dy[4] = { -1,1,0,0 };
-// 1 왼쪽 2 오른쪽
-void merge(int idx) {
-	if (idx == 2) {
-		for (int x = 0; x < N; x++) {
-			for (int y = 0; y < N; y++) {
-				
-			}
-		}
+int N;
+int arr[20][20];
+int t_arr[20][20];
+bool visited[20][20];
+
+int order[5];
+int dir[4][2] = { {-1,0}, {1,0}, {0,-1}, {0,1} }; // 0상 1하 2좌 3우
+int ans = 0;
+
+void gravity(int x, int y, int d) {
+	int nx = x + dir[d][0], ny = y + dir[d][1];
+	int value = arr[x][y];
+	if (nx < 0 || ny < 0 || nx >= N || ny >= N) return;
+	if (arr[nx][ny] != 0 && arr[nx][ny] == value && !visited[nx][ny]) {
+		arr[x][y] = 0;
+		arr[nx][ny] = value * 2;
+		visited[nx][ny] = true;
+		return;
+	}
+	else if (arr[nx][ny] == 0) {
+		arr[x][y] = 0;
+		arr[nx][ny] = value;
+		gravity(nx, ny, d);
+	}
+}
+
+void move(int d) { // d 방향으로 전부 이동시키기
+	memset(visited, 0, sizeof(visited));
+	if (d == 0 || d == 2) {
+		for (int i = 0; i < N; i++)
+			for (int j = 0; j < N; j++)
+				gravity(i, j, d);
 	}
 	else {
-		for (int x = N-1; x >= 0 ; x--) {
-			for (int y = N-1; y >= 0; y--) {
-				if (board[x + dx[idx]][y + dy[idx]] != 0 && board) {
-
-				}
-			}
-		}
+		for (int i = N - 1; i >= 0; i--)
+			for (int j = N - 1; j >= 0; j--)
+				gravity(i, j, d);
 	}
+}
+
+void calc() {
+	// 초기화
+	memset(visited, 0, sizeof(visited));
+	for (int i = 0; i < N; i++)
+		for (int j = 0; j < N; j++)
+			arr[i][j] = t_arr[i][j];
+
+	for (int i = 0; i < 5; i++) move(order[i]);
+
+	for (int i = 0; i < N; i++)
+		for (int j = 0; j < N; j++)
+			if (arr[i][j] > ans) ans = arr[i][j];
 }
 
 void doRecursion(int current) {
 	if (current >= 5) {
-		
-		
-
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				board[i][j] = origin[i][j];
-			}
-		}
-
-		// TODO: order 값들을 가지고 계산
-		for (int i = 0; i < 5; i++) {
-			merge(order[i]);
-		}
-
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				if (board[i][j] > ans) {
-					ans = board[i][j];
-				}
-			}
-		}
+		calc();
 	}
 	else {
-		for (int i = 1; i <= 4; i++) {
-			if (current != 0 && order[current - 1] == i) continue;
+		for (int i = 0; i < 4; i++) {
 			order[current] = i;
 			doRecursion(current + 1);
 		}
@@ -68,14 +70,12 @@ void doRecursion(int current) {
 
 int main() {
 	cin >> N;
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			cin >> origin[i][j];
-		}
-	}
+
+	for (int i = 0; i < N; i++)
+		for (int j = 0; j < N; j++)
+			cin >> t_arr[i][j];
 
 	doRecursion(0);
-
 	cout << ans;
 	return 0;
 }

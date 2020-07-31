@@ -158,9 +158,6 @@
     <ClCompile Include="17779_게리맨더링_2.cpp">
       <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
-    <ClCompile Include="14499_주사위_굴리기.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
     <ClCompile Include="5658_보물상자_비밀번호.cpp">
       <Filter>소스 파일\삼성 문제 풀이\삼성 모의 SW 역량 테스트</Filter>
     </ClCompile>
@@ -275,9 +272,6 @@
     <ClCompile Include="16236_아기_상어.cpp">
       <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
     </ClCompile>
-    <ClCompile Include="12100_2048_(Easy).cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
     <ClCompile Include="19236_청소년 상어.cpp">
       <Filter>소스 파일\삼성 문제 풀이</Filter>
     </ClCompile>
@@ -312,6 +306,18 @@
       <Filter>소스 파일\삼성 문제 풀이</Filter>
     </ClCompile>
     <ClCompile Include="19235_모노미노도미노.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14500_테트로미노.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="17822_원판_돌리기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="12100_2048_(Easy).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14499_주사위_굴리기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
