@@ -25,29 +25,14 @@
     <Filter Include="리소스 파일\Gary">
       <UniqueIdentifier>{1ec0b424-0635-4cdf-976d-bee68a7a3305}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\백준 단계별 풀이">
+    <Filter Include="소스 파일\백준">
       <UniqueIdentifier>{bc73dbac-19e0-47d8-8df2-9127fa4f2b88}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\백준 단계별 풀이\Backtracking">
-      <UniqueIdentifier>{54c35a4d-69a9-4a61-bfd0-0f22c7b19155}</UniqueIdentifier>
+    <Filter Include="소스 파일\모의고사">
+      <UniqueIdentifier>{9213d4f6-9e06-4724-aee2-d5b5322b42b1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\백준 단계별 풀이\Brute force">
-      <UniqueIdentifier>{202e0547-193a-4136-a7c8-0115718532db}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\백준 단계별 풀이\DFS &amp; BFS">
-      <UniqueIdentifier>{b444489f-0e11-4cd1-81ff-db27e025aa01}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\삼성 문제 풀이">
+    <Filter Include="소스 파일\SW Expert Academy">
       <UniqueIdentifier>{8d6ae95e-7140-4638-9617-766afb8efa2d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\삼성 문제 풀이\삼성 A형 기출 문제">
-      <UniqueIdentifier>{0d43ae4a-e17e-40b8-9106-650a152ccab8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제">
-      <UniqueIdentifier>{0493a51f-d777-45b0-92ad-acb28c638f90}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\삼성 문제 풀이\삼성 모의 SW 역량 테스트">
-      <UniqueIdentifier>{3ff2b5cf-821f-4831-a6c6-49e1aa5c1291}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -101,227 +86,239 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14502_연구소.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="16637_괄호_추가하기.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17070_파이프_옮기기_1.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17135_캐슬_디펜스.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17136_색종이_붙이기.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17472_다리_만들기_2.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17406_배열_ 돌리기_ 4.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="3954_Brainfuck_인터프리터.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17281_⚾.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="1767_프로세서_연결하기.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 모의 SW 역량 테스트</Filter>
-    </ClCompile>
-    <ClCompile Include="14503_로봇_청소기.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="14888_연산자_끼워넣기.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="14890_경사로.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17471_게리맨더링.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 A형 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="14891_톱니바퀴.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="13460_구슬_탈출_2.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="15685_드래곤_커브.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17144_미세먼지_안녕!.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="17779_게리맨더링_2.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="5658_보물상자_비밀번호.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 모의 SW 역량 테스트</Filter>
-    </ClCompile>
     <ClCompile Include="연습용.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2798_블랙잭.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
-    </ClCompile>
-    <ClCompile Include="2231_분해합.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
-    </ClCompile>
-    <ClCompile Include="7568_덩치.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
-    </ClCompile>
-    <ClCompile Include="1018_체스판 다시 칠하기.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
-    </ClCompile>
-    <ClCompile Include="1436_영화감독_숌.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
-    </ClCompile>
-    <ClCompile Include="1065_한수.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Brute force</Filter>
-    </ClCompile>
-    <ClCompile Include="15649_N과_M_(1).cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="15650_N과_M_(2).cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="15651_N과_M_(3).cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="15652_N과_M_(4).cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="9663_N-Queen.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="2580_스도쿠.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="14889_스타트와_링크.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="1260_DFS와_BFS.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2606_바이러스.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2667_단지번호붙이기.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="1012_유기농_배추.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2178_미로_탐색.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="7576_토마토.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="7569_토마토.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="1697_숨바꼭질.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2206_벽_부수고_이동하기.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2644_촌수계산.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="5014_스타트링크.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2468_안전_영역.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="2573_빙산.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
-    <ClCompile Include="9205_맥주_마시면서_걸어가기.cpp">
-      <Filter>소스 파일\백준 단계별 풀이\DFS &amp; BFS</Filter>
-    </ClCompile>
     <ClCompile Include="2309_일곱_난쟁이.cpp">
-      <Filter>소스 파일\백준 단계별 풀이</Filter>
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
     <ClCompile Include="14501_퇴사.cpp">
-      <Filter>소스 파일\백준 단계별 풀이</Filter>
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
     <ClCompile Include="10828_스택.cpp">
-      <Filter>소스 파일\백준 단계별 풀이</Filter>
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
     <ClCompile Include="10773_제로.cpp">
-      <Filter>소스 파일\백준 단계별 풀이</Filter>
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
     <ClCompile Include="9012_괄호.cpp">
-      <Filter>소스 파일\백준 단계별 풀이</Filter>
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
     <ClCompile Include="4949_균형잡힌_세상.cpp">
-      <Filter>소스 파일\백준 단계별 풀이</Filter>
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
     <ClCompile Include="1874_스택_수열.cpp">
-      <Filter>소스 파일\백준 단계별 풀이</Filter>
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
-    <ClCompile Include="19237_어른_상어.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="16236_아기_상어.cpp">
-      <Filter>소스 파일\삼성 문제 풀이\삼성 SW 역량 테스트 기출 문제</Filter>
-    </ClCompile>
-    <ClCompile Include="19236_청소년 상어.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="19238_스타트_택시.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_1_1.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_1_2.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_1_1_정답.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_1_2_정답.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="17825_주사위_윷놀이.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_2_1.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_2_2.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_3_1.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_3_2.cpp">
-      <Filter>소스 파일\삼성 문제 풀이</Filter>
+    <ClCompile Include="5656_벽돌깨기.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
     </ClCompile>
     <ClCompile Include="19235_모노미노도미노.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="14500_테트로미노.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="17822_원판_돌리기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="12100_2048_(Easy).cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="14499_주사위_굴리기.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
     <ClCompile Include="3190_뱀.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="12100_2048_(Easy).cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="13458_시험_감독.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="14499_주사위_굴리기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="14500_테트로미노.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17142_연구소_3.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17822_원판_돌리기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17837_새로운_게임_2_%28보류%29.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_3_2.cpp">
+      <Filter>소스 파일\모의고사</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_1_1.cpp">
+      <Filter>소스 파일\모의고사</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_1_1_정답.cpp">
+      <Filter>소스 파일\모의고사</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_1_2.cpp">
+      <Filter>소스 파일\모의고사</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_1_2_정답.cpp">
+      <Filter>소스 파일\모의고사</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_2_1.cpp">
+      <Filter>소스 파일\모의고사</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_2_2.cpp">
+      <Filter>소스 파일\모의고사</Filter>
+    </ClCompile>
+    <ClCompile Include="삼성_모의_3_1.cpp">
+      <Filter>소스 파일\모의고사</Filter>
+    </ClCompile>
+    <ClCompile Include="17825_주사위_윷놀이.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="19236_청소년 상어.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="19238_스타트_택시.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="16637_괄호_추가하기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17070_파이프_옮기기_1.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17135_캐슬_디펜스.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17136_색종이_붙이기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17281_⚾.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17406_배열_ 돌리기_ 4.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17471_게리맨더링.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17472_다리_만들기_2.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="19237_어른_상어.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="14502_연구소.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="14503_로봇_청소기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="14888_연산자_끼워넣기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="14890_경사로.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="14891_톱니바퀴.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="15685_드래곤_커브.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="16236_아기_상어.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17144_미세먼지_안녕!.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17779_게리맨더링_2.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="13460_구슬_탈출_2.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="5658_보물상자_비밀번호.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
+    </ClCompile>
+    <ClCompile Include="1767_프로세서_연결하기.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
+    </ClCompile>
+    <ClCompile Include="2580_스도쿠.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="9663_N-Queen.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="14889_스타트와_링크.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="15649_N과_M_(1).cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="15650_N과_M_(2).cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="15651_N과_M_(3).cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="15652_N과_M_(4).cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="1018_체스판 다시 칠하기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="1065_한수.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="1436_영화감독_숌.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2231_분해합.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2798_블랙잭.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="7568_덩치.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="1012_유기농_배추.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="1260_DFS와_BFS.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="1697_숨바꼭질.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2178_미로_탐색.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2206_벽_부수고_이동하기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2468_안전_영역.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2573_빙산.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2606_바이러스.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2644_촌수계산.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2667_단지번호붙이기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="5014_스타트링크.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="7569_토마토.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="7576_토마토.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="9205_맥주_마시면서_걸어가기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="%28보류%293954_Brainfuck_인터프리터.cpp">
+      <Filter>소스 파일\백준</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
