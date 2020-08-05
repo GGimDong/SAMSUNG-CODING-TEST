@@ -110,7 +110,8 @@ int main() {
 		for (int i = 1; i <= K; i++) {
 			//cout << "Idx: " << i << endl;
 			move(i);
-			//system("pause");
+			printOrder();
+			system("pause");
 			for (int j = 1; j <= N; j++)
 				for (int k = 1; k <= N; k++)
 					if (order[j][k][3] != 0) {

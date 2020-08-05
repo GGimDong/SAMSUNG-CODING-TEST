@@ -137,9 +137,6 @@
     <ClCompile Include="17822_원판_돌리기.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
-    <ClCompile Include="17837_새로운_게임_2_%28보류%29.cpp">
-      <Filter>소스 파일\백준</Filter>
-    </ClCompile>
     <ClCompile Include="삼성_모의_3_2.cpp">
       <Filter>소스 파일\모의고사</Filter>
     </ClCompile>
@@ -318,6 +315,12 @@
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
     <ClCompile Include="%28보류%293954_Brainfuck_인터프리터.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17780_새로운_게임.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="17837_새로운_게임_2.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
   </ItemGroup>
