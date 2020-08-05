@@ -2,124 +2,115 @@
 
 using namespace std;
 
+int N, K;
+int board[15][15][5]; // 0 은 color, 1~4는 order, 4개가 쌓이는 순간 사실상 게임이 끝나므로 그 이상 놓을 필요도 없음!
+int dir[5][2] = { {0,0}, {0,1}, {0,-1}, {-1,0}, {1,0} };
+
 struct Piece {
 	int x, y, d;
+
 	void changeDir() {
 		if (d == 1) d = 2;
 		else if (d == 2) d = 1;
 		else if (d == 3) d = 4;
 		else if (d == 4) d = 3;
 	}
-}pieces[11];
+}pieces[15];
 
-int dir[5][2] = { {0,0}, {0, 1}, {0,-1}, {-1,0}, {1,0} };
-int map[14][14], order[14][14][10];
-int N, K;
-
-/*디버깅*/void printOrder() {
-	for (int i = 1; i <= N; i++)
-		for (int j = 1; j <= N; j++)
-			if (order[i][j][0] != 0) {
-				cout << "(" << i << "," << j << "): ";
-				for (int k = 0; k < K; k++) {
-					if (order[i][j][k] == 0) break;
-					cout << order[i][j][k] << "("<< pieces[order[i][j][k]].d <<") ";
-				}
-				cout << endl;
-			}
+bool checkInside(int x, int y) {
+	if (x == 0 || y == 0 || x == N + 1 || y == N + 1) return false;
+	return true;
 }
 
-void moveWhite(int x, int y, int nx, int ny, int level) {
-	int s;
-	for (int i = 0; i < 10; i++) 
-		if (order[nx][ny][i] == 0) {
-			s = i;
-			break;
-		}
-	
-	for (int i = level; i < 10; i++) {
-		int idx = order[x][y][i];
-		if (idx == 0) break;
-		pieces[idx].x = nx, pieces[idx].y = ny;
+bool movePiece(int idx) {
+	int x = pieces[idx].x, y = pieces[idx].y, d = pieces[idx].d;
+	int nx = x + dir[d][0], ny = y + dir[d][1], color = board[nx][ny][0];
 
-		order[nx][ny][s++] = idx;
-		order[x][y][i] = 0;
+	/*디버깅*/ //system("pause");
+	/*디버깅*/ //cout << idx << " (" << x << "," << y << ")" << " → ";
 
+	if (!checkInside(nx, ny) || color == 2) {	// 파란색이거나 못 가는 곳이면 뒤로 돌아야함.
+		/*디버깅*/ //cout << " back ";
+		pieces[idx].changeDir(), d = pieces[idx].d;
+		nx = x + dir[d][0], ny = y + dir[d][1], color = board[nx][ny][0];	// 뒤로 돌았으니, 방향으로 인해 정보를 다시 업데이트
 	}
-	//printOrder();
-}
 
-// 뒤로 돌아서 가세요
-void moveBlue(int idx, int level) {
-	pieces[idx].changeDir();
-	int x = pieces[idx].x, y = pieces[idx].y, d = pieces[idx].d;
-	int nx = x + dir[d][0], ny = y + dir[d][1];
+	/*디버깅*/ //cout << " (" << nx << "," << ny << "), Dir:" << d;
 
-	// 뒤돌아도 못가면 바로 끝
-	if (nx == 0 || ny == 0 || nx == N + 1 || ny == N + 1) return;
-	else if (map[nx][ny] == 2) return;
+	if (!checkInside(nx, ny) || color == 2) {
+		/*디버깅*/ //cout << " can't move!" << endl;;
+		return false;	// 뒤로 돌아도 못 가면 그냥 끝
+	}
+	int level; // order에 몇번째인지를 구해야 함.
+	for (int i = 1; i <= 4; i++) if (board[x][y][i] == idx) level = i;
 
-	moveWhite(x, y, nx, ny, level);
-}
+	/*디버깅*/ //cout << "원래 위치:" << level << endl;
 
-void move(int idx) {
-	int x = pieces[idx].x, y = pieces[idx].y, d = pieces[idx].d;
-	int nx = x + dir[d][0], ny = y + dir[d][1];
-	int level;
-	for (int i = 0; i < K; i++) if (order[x][y][i] == idx) level = i;
+	int t_idx = 0;
+	int t[4] = { 0,0,0,0 };	// 옮길 임시 배열
+	for (int i = level; i <= 4; i++) {
+		int p_idx = board[x][y][i];
+		t[t_idx++] = p_idx;
+		board[x][y][i] = 0;
+		pieces[p_idx].x = nx, pieces[p_idx].y = ny;
+	}
 
-	// 못 가는 곳이거나 파란곳으로 향할 땐 동일하게 처리
-	if (nx == 0 || ny == 0 || nx == N + 1 || ny == N + 1) moveBlue(idx, level);
-	else if (map[nx][ny] == 2) moveBlue(idx, level);
-	else {
-		// 움직임 이동
-		moveWhite(x, y, nx, ny, level);
-		// 빨간색이면 순서 바꾸기만 추가
-		if (map[nx][ny] == 1) {
-			int temp[10] = { 0, };
-			for (int i = 0; i < K; i++) if (order[nx][ny][i] == idx) level = i;
-			int t_i = 0;
-			for (int i = 9; i >= level; i--) {
-				if (order[nx][ny][i] != 0) temp[t_i++] = order[nx][ny][i];
-			}
-
-			//cout << "DEBUG ";
-			for (int i = 0; i < 10; i++) {
-				if (temp[i] == 0) break;
-				//cout << temp[i] << " ";
-				order[nx][ny][level + i] = temp[i];
-			}//cout << endl;
+	if (color == 1) { // 빨갱이면 이 t를 뒤바꿔주기
+		/*디버깅*/ //cout << " Order change " << endl;
+		int zero_num = 0;
+		for (int i = 0; i < 4; i++) if (t[i] == 0) zero_num++;
+		if (zero_num == 0) {
+			int temp_1 = t[0], temp_2 = t[1];
+			t[1] = t[2], t[2] = temp_2;
+			t[0] = t[3], t[3] = temp_1;
+		}
+		else if (zero_num == 1) {
+			int temp_1 = t[0];
+			t[0] = t[2], t[2] = temp_1;
+		}
+		else if (zero_num == 2) {
+			int temp_1 = t[0];
+			t[0] = t[1], t[1] = temp_1;
 		}
 	}
+
+	/*디버깅*/ //for (int i = 0; i < 4; i++) cout << t[i] << " "; cout << endl;
+
+	// (x,y) -> (nx, ny) 로 이동
+	t_idx = 0;
+	for (int i = 1; i <= 4; i++) {
+		if (board[nx][ny][i] != 0) continue;	// 0이 나올때 까지 위로 올려
+		board[nx][ny][i] = t[t_idx++];
+	}
+
+	if (board[nx][ny][4] != 0) return true;	// 마지막에 결국 4번째에도 말이 생기면 그대로 게임 끝
+	else return false;
 }
 
 int main() {
 	cin >> N >> K;
 	for (int i = 1; i <= N; i++)
-		for (int j = 1; j <= N; j++) 
-			cin >> map[i][j];
-
+		for (int j = 1; j <= N; j++)
+			cin >> board[i][j][0];
+	
 	for (int i = 1; i <= K; i++) {
 		cin >> pieces[i].x >> pieces[i].y >> pieces[i].d;
-		order[pieces[i].x][pieces[i].y][0] = i;
+		board[pieces[i].x][pieces[i].y][1] = i;
 	}
-	
 
-	for (int time = 1; time <= 1000; time++) {
-		//cout << "Time: " << time << endl;
+	int ans = -1;
+	bool is_finished = false;
+	
+	for (int t = 1; t <= 1000; t++) {
 		for (int i = 1; i <= K; i++) {
-			//cout << "Idx: " << i << endl;
-			move(i);
-			printOrder();
-			system("pause");
-			for (int j = 1; j <= N; j++)
-				for (int k = 1; k <= N; k++)
-					if (order[j][k][3] != 0) {
-						cout << time;
-						return 0;
-					}
+			if (movePiece(i)) {
+				is_finished = true;
+				ans = t;
+				break;
+			}
+		}
+		if (is_finished) break;
 	}
-	}
-	cout << -1;
+	cout << ans;
 	return 0;
 }
