@@ -323,6 +323,12 @@
     <ClCompile Include="17837_새로운_게임_2.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
+    <ClCompile Include="15683_감시.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="15684_사다리_조작.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
