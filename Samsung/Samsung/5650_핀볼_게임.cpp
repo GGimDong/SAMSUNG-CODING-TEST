@@ -59,15 +59,10 @@ void simulate(int start_x, int start_y, int d) {
 	int x = start_x, y = start_y;
 
 	while (1) {
-		/*디버깅*/ //cout << x << "," << y << ": " << d << endl; system("pause");
-		
 		int value = arr[x][y];
 
 		// 목표지점에 도달
-		if (value == -1) {
-			/*디버깅*/ //cout << "Mission complete: " << point << endl;
-			break;
-		}
+		if (value == -1) break;
 		// 웜홀인 경우엔 워프해드림
 		else if (value >= 6) {
 			bool flag = false;
@@ -89,7 +84,6 @@ void simulate(int start_x, int start_y, int d) {
 
 		// 방향이 변한 상황, 박은 것임
 		if (nextDir != d) {
-			/*디버깅*/ //cout << "Crashed! " << d  <<" to " << nextDir << endl;
 			point++;
 			d = nextDir;
 		}
@@ -98,20 +92,9 @@ void simulate(int start_x, int start_y, int d) {
 		x += dir[d][0], y += dir[d][1];
 
 		//원래 자리로 돌아온 경우
-		if (is_origin(x, y, start_x, start_y)) {
-			/*디버깅*/ //cout << "Origin position: " << point <<endl;
-			break;
-		}
+		if (is_origin(x, y, start_x, start_y)) break;
 	}
 	if (point > ans) ans = point;
-}
-
-void printBoard() {
-	for (int i = 0; i <= N + 1; i++){
-		for (int j = 0; j <= N + 1; j++) {
-			cout << arr[i][j] << " ";
-		}cout << endl;
-	}cout << endl;
 }
 
 int main() {
@@ -125,8 +108,6 @@ int main() {
 				if (i == 0 || j == 0 || i == N + 1 || j == N + 1) arr[i][j] = 5;
 				else cin >> arr[i][j];
 			}
-
-		//printBoard();
 
 		for (int i = 1; i <= N; i++) {
 			for (int j = 1; j <= N; j++) {
