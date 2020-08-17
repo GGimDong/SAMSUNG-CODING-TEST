@@ -28,9 +28,6 @@
     <Filter Include="소스 파일\백준">
       <UniqueIdentifier>{bc73dbac-19e0-47d8-8df2-9127fa4f2b88}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\모의고사">
-      <UniqueIdentifier>{9213d4f6-9e06-4724-aee2-d5b5322b42b1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\SW Expert Academy">
       <UniqueIdentifier>{8d6ae95e-7140-4638-9617-766afb8efa2d}</UniqueIdentifier>
     </Filter>
@@ -136,30 +133,6 @@
     </ClCompile>
     <ClCompile Include="17822_원판_돌리기.cpp">
       <Filter>소스 파일\백준</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_3_2.cpp">
-      <Filter>소스 파일\모의고사</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_1_1.cpp">
-      <Filter>소스 파일\모의고사</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_1_1_정답.cpp">
-      <Filter>소스 파일\모의고사</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_1_2.cpp">
-      <Filter>소스 파일\모의고사</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_1_2_정답.cpp">
-      <Filter>소스 파일\모의고사</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_2_1.cpp">
-      <Filter>소스 파일\모의고사</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_2_2.cpp">
-      <Filter>소스 파일\모의고사</Filter>
-    </ClCompile>
-    <ClCompile Include="삼성_모의_3_1.cpp">
-      <Filter>소스 파일\모의고사</Filter>
     </ClCompile>
     <ClCompile Include="17825_주사위_윷놀이.cpp">
       <Filter>소스 파일\백준</Filter>
@@ -346,6 +319,15 @@
     </ClCompile>
     <ClCompile Include="16235_나무_재테크.cpp">
       <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="5653_줄기세포배양.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
+    </ClCompile>
+    <ClCompile Include="5650_핀볼_게임.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
+    </ClCompile>
+    <ClCompile Include="5648_원자_소멸_시뮬레이션.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
