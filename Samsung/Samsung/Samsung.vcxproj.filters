@@ -329,6 +329,9 @@
     <ClCompile Include="5648_원자_소멸_시뮬레이션.cpp">
       <Filter>소스 파일\SW Expert Academy</Filter>
     </ClCompile>
+    <ClCompile Include="10059_유효기간.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="input\pic.bmp">
