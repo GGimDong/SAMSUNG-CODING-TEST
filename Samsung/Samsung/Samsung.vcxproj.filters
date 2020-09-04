@@ -13,18 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="리소스 파일\Castle_defence">
-      <UniqueIdentifier>{48415db9-2676-4ce2-9901-09499dbefff8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="리소스 파일\Pipe">
-      <UniqueIdentifier>{46ce2994-7239-40e3-9575-fd2560754f89}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="리소스 파일\Array_rotate_4">
-      <UniqueIdentifier>{3715dbcf-4889-45e0-bc08-338a8396ab1f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="리소스 파일\Gary">
-      <UniqueIdentifier>{1ec0b424-0635-4cdf-976d-bee68a7a3305}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\백준">
       <UniqueIdentifier>{bc73dbac-19e0-47d8-8df2-9127fa4f2b88}</UniqueIdentifier>
     </Filter>
@@ -33,59 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input\Castle_defence\input1.txt">
-      <Filter>리소스 파일\Castle_defence</Filter>
-    </Text>
-    <Text Include="input\Castle_defence\input2.txt">
-      <Filter>리소스 파일\Castle_defence</Filter>
-    </Text>
-    <Text Include="input\Castle_defence\input3.txt">
-      <Filter>리소스 파일\Castle_defence</Filter>
-    </Text>
-    <Text Include="input\Castle_defence\input4.txt">
-      <Filter>리소스 파일\Castle_defence</Filter>
-    </Text>
-    <Text Include="input\Castle_defence\input5.txt">
-      <Filter>리소스 파일\Castle_defence</Filter>
-    </Text>
-    <Text Include="input\Castle_defence\input6.txt">
-      <Filter>리소스 파일\Castle_defence</Filter>
-    </Text>
-    <Text Include="input\Pipe\input1.txt">
-      <Filter>리소스 파일\Pipe</Filter>
-    </Text>
-    <Text Include="input\Pipe\input2.txt">
-      <Filter>리소스 파일\Pipe</Filter>
-    </Text>
-    <Text Include="input\Pipe\input3.txt">
-      <Filter>리소스 파일\Pipe</Filter>
-    </Text>
-    <Text Include="input\Pipe\input4.txt">
-      <Filter>리소스 파일\Pipe</Filter>
-    </Text>
-    <Text Include="input\Array_rotate_4\input.txt">
-      <Filter>리소스 파일\Array_rotate_4</Filter>
-    </Text>
-    <Text Include="input\Gary\input1.txt">
-      <Filter>리소스 파일\Gary</Filter>
-    </Text>
-    <Text Include="input\Gary\input2.txt">
-      <Filter>리소스 파일\Gary</Filter>
-    </Text>
-    <Text Include="input\Gary\input3.txt">
-      <Filter>리소스 파일\Gary</Filter>
-    </Text>
-    <Text Include="input\Gary\input4.txt">
-      <Filter>리소스 파일\Gary</Filter>
-    </Text>
-    <Text Include="input\input.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="연습용.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="2309_일곱_난쟁이.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
@@ -332,13 +267,5 @@
     <ClCompile Include="10059_유효기간.cpp">
       <Filter>소스 파일\SW Expert Academy</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="input\pic.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="input\유니온파인드.PNG">
-      <Filter>리소스 파일</Filter>
-    </Image>
   </ItemGroup>
 </Project>
