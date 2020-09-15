@@ -273,5 +273,8 @@
     <ClCompile Include="1_수식풀이.c">
       <Filter>소스 파일\LG CNS 준비</Filter>
     </ClCompile>
+    <ClCompile Include="1175_배달.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

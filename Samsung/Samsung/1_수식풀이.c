@@ -2,6 +2,9 @@
 2-(6*(2-3))
 */
 #include <stdio.h>
+#include <stdbool.h>
+
+bool is_correct = true;
 
 void calc(char input[100]) {
 
