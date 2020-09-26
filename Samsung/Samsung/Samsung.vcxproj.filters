@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\LG CNS 준비">
       <UniqueIdentifier>{18de5ab2-9a1e-4fdc-b8c0-313b7cc0a1d8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\알고리즘 공부">
+      <UniqueIdentifier>{f0d153d9-6601-4856-b464-48a75404191c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="2309_일곱_난쟁이.cpp">
@@ -273,8 +276,14 @@
     <ClCompile Include="1_수식풀이.c">
       <Filter>소스 파일\LG CNS 준비</Filter>
     </ClCompile>
-    <ClCompile Include="1175_배달.cpp">
+    <ClCompile Include="%28보류%291175_배달.cpp">
       <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="%28보류%2913510_트리와_쿼리_1.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary search.cpp">
+      <Filter>소스 파일\알고리즘 공부</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
