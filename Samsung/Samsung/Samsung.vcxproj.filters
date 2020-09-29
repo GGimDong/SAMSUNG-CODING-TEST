@@ -285,5 +285,17 @@
     <ClCompile Include="Binary search.cpp">
       <Filter>소스 파일\알고리즘 공부</Filter>
     </ClCompile>
+    <ClCompile Include="1920_수_찾기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="10816_숫자_카드_2.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="1654_랜선_자르기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="2805_나무_자르기.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
